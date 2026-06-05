@@ -31,3 +31,4 @@ dist-ssr
 .specify/
 .npm-cache/
 .npmrc-local
+.n8n/
