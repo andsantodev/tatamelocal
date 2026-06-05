@@ -1,50 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Constituição do Projeto de Portfólio
 
-## Core Principles
+## Princípios Fundamentais
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Princípio 1: Simplicidade e Legibilidade
+Priorize código simples e legível sobre otimizações prematuras. Evite complexidade desnecessária até que seja comprovadamente necessária.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Princípio 2: Responsabilidade Única dos Componentes Vue
+Cada componente Vue deve ter uma única responsabilidade bem definida, facilitando manutenção e reutilização.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Princípio 3: Preservação de Layout e Estilos
+Nunca alterar layout ou estilos sem instrução explícita. Todas as mudanças de UI devem ser solicitadas especificamente.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Princípio 4: Funcionalidades Apenas conforme Especificado
+Nunca inventar funcionalidades não descritas nos requisitos. Implemente apenas o que está claramente definido.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Princípio 5: Uso Obrigatório da Composition API
+Sempre usar Composition API com <script setup> em todos os componentes Vue para melhor organização e reutilização de lógica.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Princípio 6: TypeScript em Todo o Código
+TypeScript obrigatório em todos os arquivos .ts e .vue para garantir segurança de tipos e melhor experiência de desenvolvimento.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### Princípio 7: Variáveis de Ambiente Seguras
+Variáveis de ambiente devem ser acessadas apenas via VITE_ e nunca expostas diretamente no código do aplicativo.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Princípio 8: Commits Atômicos por Funcionalidade
+Faça commits atômicos contendo apenas uma única alteração lógica relacionada a uma funcionalidade específica.
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Práticas de Desenvolvimento
+- Use Composition API com <script setup> em todos os componentes Vue.
+- Mantenha os componentes com responsabilidade única.
+- Nunca altere layout ou estilos sem instrução explícita.
+- Não invente funcionalidades não descritas nos requisitos.
 
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+## Fluxo de Trabalho e Qualidade
+- Todas as alterações de código devem ser feitas com TypeScript em arquivos .ts e .vue.
+- Variáveis de ambiente devem ser acessadas via VITE_ e nunca expostas diretamente no código.
+- Faça commits atômicos por funcionalidade, cada contendo uma única alteração lógica.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+## Governança
+Esta constituição substitui todas as outras práticas. Alterações requerem documentação, aprovação e plano de migração.
+Todas as PRs/revisões devem verificar a conformidade com estes princípios.
+Use o arquivo de orientação em tempo de desenvolvimento para diretrizes específicas.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Versão**: 1.0.0 | **Ratificado**: 2026-05-27 | **Última Alteração**: 2026-05-27
