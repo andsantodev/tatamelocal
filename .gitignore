@@ -26,6 +26,7 @@ dist-ssr
 *.sw?
 
 .specify/
+.specs/
 .npm-cache/
 .npmrc-local
 .n8n/
